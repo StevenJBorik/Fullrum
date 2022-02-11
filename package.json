@@ -1,0 +1,29 @@
+{
+  "name": "fullstackforum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon dist/index.js",
+    "start": "ts-node dist/index.js",
+    "start2": "node src/index.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^5.0.0",
+    "@mikro-orm/core": "^5.0.0",
+    "@mikro-orm/migrations": "^5.0.0",
+    "@mikro-orm/postgresql": "^5.0.0",
+    "pg": "^8.7.3"
+  }
+}
