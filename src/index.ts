@@ -1,4 +1,14 @@
-console.log("hellO der!");
-console.log("hellO der!");
-console.log("hellO der!");
+import { MikroORM } from "@mikro-orm/core"; 
+import { __prod__ } from "./constants";
+import { Post } from "./entities/Post";
+import microConfig from "./mikro-orm.config";
 
+const main = async () => {
+    const orm = await MikroORM.init(microConfig);
+
+    // const post = orm.em.create(Post, { title: "the first post" });
+    await orm.em.persistAndFlush(Post); 
+    await orm.em.nativeInsert(Post, {title: "first post" }); 
+}; 
+
+main(); 
