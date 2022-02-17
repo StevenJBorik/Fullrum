@@ -10,7 +10,7 @@ export default {
     },
     entities: [Post],
     port: 5432, 
-    dbName: 'fsforum',
-    type: 'postgresql',
+    dbName: "fsforum",
+    type: "postgresql",
     debug: !__prod__,
 } as Parameters<typeof MikroORM.init>[0]; 

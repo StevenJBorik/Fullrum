@@ -13,8 +13,8 @@ exports.default = {
     },
     entities: [Post_1.Post],
     port: 5432,
-    dbName: 'fsforum',
-    type: 'postgresql',
+    dbName: "fsforum",
+    type: "postgresql",
     debug: !constants_1.__prod__,
 };
 //# sourceMappingURL=mikro-orm.config.js.map
